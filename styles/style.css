@@ -51,20 +51,20 @@ ol {
   display: flex;
   width: 100%;
   max-width: 1140px;
-  margin: auto;
-  padding: 133px 30px;
+  margin: 133px 30px;
   gap: 30px;
 }
 
 .button {
-  max-width: 194px;
-  max-height: 34px;
+  min-width: 194px;
+  min-height: 34px;
   background-color: transparent;
   border: 1px solid #FFF; 
   color: #FFF;
   text-align: center;
   font-size: 18px;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .result {
@@ -84,20 +84,46 @@ ol {
 
 .search-form {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: end;
   gap: 40px;
   height: 100%;
 }
 
 .search-form__fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border: none;
   width: 100%;
 }
 
 .search-form__fieldset-title {
   font-size: 18px;
   font-weight: 400;
+}
+
+.search-form__label {
+  cursor:pointer;
+}
+
+.search-form__pseudo-checkbox {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  border: 1px solid #fff;
+}
+
+.search-form__label-text {
+}
+
+.search-form__textfield {
+  border-color: #fff;
+  border-right: transparent;
+  border-left: transparent;
+  background-color: transparent;
+  appearance: none;
+  color: rgba(255, 255, 255, 0.70);
+  font-size: 18px;
 }
 
 .search-form__submit-button {
@@ -173,4 +199,8 @@ ol {
 .content__video-card-thumbnail {
   max-width: 194px;
   max-height: 103px;
+}
+
+.more-button {
+  width: 100%;
 }
