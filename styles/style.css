@@ -95,6 +95,21 @@ ol {
   height: 0px;
 }
 
+.result__video-container::before {
+
+  /* Псевдоэлемент добавлен для достижения соответствияз размера окна видео по высоте макету. Обрезает небольшую часть видео сверху */
+
+  content: '';
+  position: absolute;
+  display: inline-block;
+  top: -14px;
+  left: 0;
+  width: 100%;
+  height: 13px;
+  background-color:  #1b1919;
+  z-index: 1;
+}
+
 .result__video {
   position: absolute;
   bottom: 0;
