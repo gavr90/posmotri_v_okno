@@ -64,28 +64,12 @@ ol {
   position: relative;
   margin-top: 76px;
   inline-size: 711px;
-  padding-top: 386px;
+  padding-bottom: 386px;
   block-size: 0px;
-}
-
-/* Псевдоэлемент .result__video-container::before добавлен для достижения соответствия размера окна видео по высоте макету. Обрезает небольшую часть видео сверху */
-
-.result__video-container::before {
-  content: "";
-  position: absolute;
-  display: inline-block;
-  inset-block-start: -14px;
-  inset-inline-start: 0;
-  inline-size: 100%;
-  block-size: 13px;
-  background-color: #1b1919;
-  z-index: 1;
+  overflow: hidden;
 }
 
 .result__video {
-  position: absolute;
-  inset-block-end: 0;
-  inset-inline-start: 0;
   inline-size: 100%;
 }
 
@@ -179,9 +163,9 @@ ol {
 
 .search-form__checkbox:active + .search-form__pseudo-checkbox::before {
   content: "";
-  position: absolute;
+  position: relative;
   display: inline-block;
-  inset-block-start: 1px;
+  inset-block-start: 0px;
   inset-inline-start: 1px;
   inline-size: 16px;
   block-size: 16px;
