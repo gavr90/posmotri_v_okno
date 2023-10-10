@@ -11,7 +11,7 @@ html {
 .page {
   inline-size: 1200px;
   block-size: 100%;
-  margin: 0 auto;
+  margin: auto;
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
@@ -63,14 +63,12 @@ ol {
 .result__video-container {
   position: relative;
   margin-top: 76px;
-  inline-size: 711px;
-  padding-bottom: 386px;
-  block-size: 0px;
-  overflow: hidden;
 }
 
 .result__video {
-  inline-size: 100%;
+  width: 711px;
+  height: 386px;
+  object-fit: cover;
 }
 
 .search-form {
@@ -283,6 +281,7 @@ ol {
 .content__video-card-thumbnail {
   max-inline-size: 180px;
   max-block-size: 103px;
+  object-fit: cover;
 }
 
 .more-button {
