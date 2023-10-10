@@ -50,8 +50,6 @@ ol {
 .content {
   display: flex;
   inline-size: 100%;
-  max-inline-size: 1140px;
-  max-block-size: 534px;
   margin: 133px 30px;
   gap: 30px;
 }
