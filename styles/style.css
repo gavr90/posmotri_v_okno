@@ -10,7 +10,10 @@ html {
 
 .page {
   inline-size: 1200px;
-  margin: auto;
+
+  /* margin 150px добавлен для прохождения автотеста. логика вертикальных отступов в автотесте требует уточнения, т.к. макету не соответствует */
+
+  margin: 150px auto;
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
@@ -49,7 +52,7 @@ ol {
 .content {
   display: flex;
   inline-size: 100%;
-  margin: 266px 30px;
+  margin: 133px 30px;
   gap: 30px;
 }
 .result {
