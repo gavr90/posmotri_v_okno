@@ -177,6 +177,17 @@ ol {
   background-color: #fff;
 }
 
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::before {
+  content: "";
+  position: relative;
+  display: inline-block;
+  inset-block-start: 0px;
+  inset-inline-start: 1px;
+  inline-size: 16px;
+  block-size: 16px;
+  background-color: #fff;
+}
+
 .search-form__submit-button {
   min-inline-size: 194px;
   block-size: 34px;
@@ -237,7 +248,8 @@ ol {
   flex-direction: column;
   inline-size: 399px;
   block-size: 298px;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .content__list-item:not(:last-child) {
@@ -272,14 +284,12 @@ ol {
   display: flex;
 }
 
-.content__video-card-description-container {
-  inline-size: 100%;
-}
-
 .content__video-card-title {
   font-family: "Oswald", sans-serif;
   font-size: 30px;
   font-weight: 700;
+  width: 100%;
+  min-width: 200px;
   text-transform: uppercase;
 }
 
@@ -290,8 +300,8 @@ ol {
 }
 
 .content__video-card-thumbnail {
-  max-inline-size: 180px;
-  max-block-size: 103px;
+  inline-size: 194px;
+  block-size: 103px;
   object-fit: fill;
   object-position: 50% 50%;
 }
