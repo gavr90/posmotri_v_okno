@@ -70,7 +70,8 @@ ol {
 .result__video {
   width: 711px;
   height: 386px;
-  object-fit: cover;
+  object-fit: fill;
+  object-position: 50% 50%;
 }
 
 .search-form {
@@ -137,9 +138,13 @@ ol {
   background-color: transparent;
   appearance: none;
   border: none;
-  color: rgba(255, 255, 255, 0.7);
-  font-family: Fira Sans Condensed;
+  color: #fff;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
+}
+
+.search-form__textfield::placeholder {
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .search-form__textfield:focus {
@@ -182,7 +187,7 @@ ol {
   min-block-size: 34px;
   background-color: transparent;
   border: 1px solid #fff;
-  font-family: Fira Sans Condensed;
+  font-family: "Fira Sans Condensed", sans-serif;
   color: #fff;
   text-align: center;
   font-size: 18px;
@@ -215,7 +220,7 @@ ol {
 
 .title {
   margin-bottom: -7px;
-  font-family: Oswald;
+  font-family: "Oswald", sans-serif;
   font-size: 75px;
   font-weight: 700;
   line-height: 94%;
@@ -230,9 +235,13 @@ ol {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  max-block-size: 300px;
+  inline-size: 399px;
+  block-size: 298px;
   overflow: auto;
+}
+
+.content__list-item:not(:last-child) {
+  margin-block-end: 30px;
 }
 
 .content__card-link {
@@ -268,7 +277,7 @@ ol {
 }
 
 .content__video-card-title {
-  font-family: Oswald;
+  font-family: "Oswald", sans-serif;
   font-size: 30px;
   font-weight: 700;
   text-transform: uppercase;
@@ -283,7 +292,8 @@ ol {
 .content__video-card-thumbnail {
   max-inline-size: 180px;
   max-block-size: 103px;
-  object-fit: cover;
+  object-fit: fill;
+  object-position: 50% 50%;
 }
 
 .more-button {
